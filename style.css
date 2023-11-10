@@ -1,0 +1,60 @@
+
+
+
+
+/* Page */
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Header/Nav */
+
+header {
+    position: absolute;
+    width: 100%;
+}
+
+#nav-list {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+    padding: 20px;
+}
+
+.nav-link {
+    text-decoration: none;   
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 1em;
+}
+
+
+#logo {
+    display: flex;
+    float: left;
+}
+
+#logo img {
+    width: auto;
+    height: 80px;
+}
+
+/* Footer */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
