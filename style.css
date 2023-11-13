@@ -50,6 +50,40 @@ header {
     height: 80px;
 }
 
+/* banner
+
+It's not perfect but the animation works on larger screens ok, when doing breakpoints change .banner-image width:10% to a higher value.
+
+*/
+
+#banner-container {
+    width: 200%;
+    overflow: hidden;
+    height: 120px;
+    display: flex;
+}
+
+.banner-image {
+    width: 10%;
+    height: 120px;
+    object-fit: cover;
+    display: block;
+    object-position: center bottom;
+    animation: bannerAnimation 20s linear infinite;
+    
+}
+
+@keyframes bannerAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+}
+
+
+
 /* Footer */
 
 footer {
