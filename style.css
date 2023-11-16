@@ -1,6 +1,41 @@
 
+/* Color/Style */
+
+header {
+    background-color: white;
+}
+
+main {
+    background-color: white;
+}
+
+footer {
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-link {
+    color: black;
+    transition: 0.3s;
+    text-decoration: none;  
+}
+
+.nav-link:hover {
+    color: aqua;
+}
 
 
+
+
+
+
+
+
+/* Desktop Viewport */
+@media screen and (min-width: 481px) {
 
 /* Page */
 
@@ -15,17 +50,22 @@ body {
     margin: 0;
 }
 
+.mobile {
+    display: none;
+}
+
 /* Header/Nav */
 
 header {
     position: absolute;
     width: 100%;
+    top: 0;
 }
 
 #nav-list {
     display: block;
     margin: 0;
-    padding: 0;
+    margin-right: 50px;
     list-style: none;
     text-align: right;
     padding: 20px;
@@ -44,6 +84,7 @@ header {
 #logo {
     display: flex;
     float: left;
+    margin-left: 50px;
 }
 
 #logo img {
@@ -60,17 +101,17 @@ It's not perfect but the animation works on larger screens ok, when doing breakp
 #banner-container {
     width: 200%;
     overflow: hidden;
-    height: 120px;
+    height: auto;
     display: flex;
 }
 
 .banner-image {
     width: 10%;
-    height: 120px;
+    height: 100px;
     object-fit: cover;
     display: block;
     object-position: center bottom;
-    animation: bannerAnimation 20s linear infinite;
+    animation: bannerAnimation 10s linear infinite;
     
 }
 
@@ -84,12 +125,145 @@ It's not perfect but the animation works on larger screens ok, when doing breakp
 }
 
 
+/* main */
 
-/* Footer */
+main {
+    margin-top:190px;
+}
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+}
+
+
+
+/* Mobile Viewport */
+@media screen and (max-width: 480px) {
+
+    /* Page */
+
+    #page-container {
+        overflow: hidden;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    /* header/nav */
+
+    header {
+        position: -webkit-sticky;
+        position: fixed;
+        top: 0;
+        display: block;
+        width: 100%;
+        z-index: 2;
+    }
+
+    #logo {
+        padding: 0;
+        text-align: center;
+        float: left;
+        padding-left: 41%;
+    }
+    
+    #logo img {
+        width: auto;
+        height: 60px;
+    }
+
+    /* mobile hamburger button and nav menu */
+
+    .hamburger {
+        display: block;
+        float: right;
+        padding: 15px;
+        z-index: 3;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        background-color: rgba(0, 0, 0, 0.884);
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        background-color: red;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: red;
+    }
+
+    #nav-list {
+        display: none;
+    }
+
+    #nav-list.active {
+        display: inline;
+        margin: 0;
+        margin-right: 5%;
+        list-style: none;
+        text-align: left;
+        padding: 25px;
+        float: right;
+        background-color: white;
+        z-index: 5; /* Set a higher z-index */
+        position: absolute;
+        top: 60px; /* Adjust based on the height of your header */
+        right: 0;
+        background-color: white;
+        border-width: 5px;
+        border: solid;
+        border-color: black;
+        border-radius: 5px;
+    }
+    
+    
+    .nav-item {
+        display: block;
+        padding: 1em;
+        border-bottom: solid 1px;
+        border-color: black;
+    }
+
+    /* banner */
+
+    #banner-container {
+        clear: both;
+        display: flex;
+        width: 100%;
+        height: 60px;
+        z-index: 1;
+    }
+
+    .banner-image {
+        display: none;
+    }
+
+    .banner-image:nth-child(-n+2) {
+        display: inline;
+        width: 50%;
+        object-fit: cover;
+        object-position: center bottom;
+
+    }
+
+
+    /* main */
+
+    main {
+        margin-top: 124px;
+    }
+
 }
