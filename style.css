@@ -101,9 +101,88 @@ blockquote footer {
 }
 
 
+.about-section {
+  padding: auto;
+  background-color: #fff;
+  margin: 20px auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: auto; 
+  margin-top: 50px; 
+  display: grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+      font-family: 'Montserrat', sans-serif;
+  transform: translate(30%, 0%)
+}
 
+.about-section h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
 
+.about-section p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 15px;
+}
 
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
 
 
 /* Desktop Viewport */
