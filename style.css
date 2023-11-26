@@ -1,12 +1,13 @@
-
 /* Color/Style */
 
 header {
     background-color: white;
+/*
+Video box
+*/	
 }
-
-.video-preview {
-    width: 30%;
+ .video-preview {
+     width: 30%;
     background-color: #f0f0f0;
     padding: 20px;
     display: flex;
@@ -33,16 +34,19 @@ header {
     width: 90%;
     height: 90%;
 }
+/*
+homepage text
+*/
 #content-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-
 main {
-    width: 65%; 
+    width: 65%; /* Adjust width based on your layout */
     padding: 40px;
     box-sizing: border-box;
+		font-family: 'Montserrat', sans-serif;
 }
 
 footer {
@@ -57,6 +61,7 @@ footer {
   height: 50px;
   margin-bottom: 0px;
 }
+
 
 .nav-link {
     color: white;
@@ -79,7 +84,9 @@ font-family: 'Montserrat', sans-serif;
 .nav-link:hover {
     color: aqua;
 }
-
+/*
+quote in homepage
+*/
 blockquote {
     margin: 0;
     padding: 20px;
@@ -99,7 +106,6 @@ blockquote footer {
     font-size: 14px;
     color: #888;
 }
-
 
 .about-section {
   padding: auto;
@@ -128,14 +134,16 @@ blockquote footer {
   color: #666;
   margin-bottom: 15px;
 }
-
+/*
+Table in contacts
+*/
 form {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     max-width: 400px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 label {
@@ -171,6 +179,21 @@ input[type="submit"]:hover {
     background-color: #45a049;
 }
 
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .contact-info {
     background-color: #fff;
     padding: 20px;
@@ -182,6 +205,39 @@ input[type="submit"]:hover {
 
 .contact-info p {
     margin: 5px 0;
+}
+
+/*
+services Page
+*/
+#serviceContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#serviceHeader {
+    display: flex;
+    justify-content: center;
+}
+
+.service {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      padding: 20px;
+    }
+
+.service img {
+      width: 200px; /* Adjust the size of the images */
+      height: auto;
+      margin-bottom: 20px;
+      margin-right: 20px;
+}
+
+.serviceText {
+    display: flex;
+    flex-direction: column;
 }
 
 
