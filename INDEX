@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <!-- DO NOT FORGET TO CHANGE TITLE -->
+    <title>Dream Events | Home </title>
+    
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon, may want to edit the image later to remove whitespace around -->
+    <link rel="icon" href="media/DREAMEVENTS.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    
+  </head>
+
+  <body>
+  <div id="page-container">
+  <div id="content-wrap">
+
+    <header>
+
+      <div id="logo">
+        <a href="index.html"><img src="media/DREAMEVENTS.png" alt="Logo"></a>
+      </div>
+
+      <div class="hamburger mobile">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      
+      <nav>
+
+        <ul id="nav-list">
+          
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <div id="banner-container" class="banner">
+        <img src="media/banner.jpg" alt="banner" class="banner-image">
+        <img src="media/banner.jpg" alt="banner" class="banner-image">
+        <img src="media/banner.jpg" alt="banner" class="banner-image">
+        <img src="media/banner.jpg" alt="banner" class="banner-image">
+        <img src="media/banner.jpg" alt="banner" class="banner-image">
+        <img src="media/banner.jpg" alt="banner" class="banner-image">
+
+      </div>
+    </header>
+	
+            <div class="video-preview">
+                <div class="video-container">
+                    <!-- Replace 'YOUR_VIDEO_URL' with the actual YouTube video URL -->
+                 <iframe width="560" height="315" src="https://www.youtube.com/embed/so8LKNIjaCI" style="border: 0;" allowfullscreen></iframe>
+                </div>
+                <!-- Additional information, description, or related content -->
+                <p>Preview of the AD</p>
+            </div>
+
+
+    <main>
+	<h1>Dream Events</h1>
+	<h2>Dreams Unleashed, Memories Created!</h2>
+	<p>Planning a party doesn't have to be hard! We bring your celebrations to life! Whether you're planning a birthday bash, a corporate event, or a festive gathering, we have everything you need to make your party a memorable success.</p>
+                <!-- Customer quote section using Bootstrap -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <blockquote class="blockquote text-center">
+                                <p class="mb-0">"The service provided by Dream Events was exceptional! They made our party a huge success."</p>
+                                <footer class="blockquote-footer">John Doe</footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+
+    </main>
+
+
+    <footer>
+      <p><a href="mailto:dreamevents@gmail.com" class="email">dreamevents@gmail.com</a></p>
+      <p>&copy;2023 Dream Events. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+      
+  </div> 
+  </div>
+  </body>
+
+</html>
